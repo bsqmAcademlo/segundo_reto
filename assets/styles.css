@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    padding: 1rem;
+    background-color: var(--Verypaleblue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card__head img {
+    width: 100%;
+    display: block;
+}
+
+.card__body {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__body h2 {
+    font-size: 2rem;
+    color: var(--Darkblue);
+}
+
+.card__body p {
+    color: var(--Desaturatedblue);
+    line-height: 1.7rem;
+}
+
+.card__body-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.card__body-plan p:nth-child(1) {
+    color: var(--Darkblue);
+    font-weight: 900;
+}
+
+.card__body-plan > p {
+    color: var(--Brightblue);
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.card__body-plan svg {
+    cursor: pointer;
+}
+
+.card__body-plan svg circle,
+.card__body-plan svg path {
+    transition: fill 0.5s;
+}
+
+.card__body-plan svg:hover circle {
+    fill: #717fa6;
+}
+
+.card__body-plan svg:hover path {
+    fill: #dfe6fb;
+}
+
+/* .card__body-box {
+    margin-right: 3rem;
+} */
+
+.btn {
+    border-radius: 0.7rem;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.btn_bg {
+    background-color: var(--Brightblue);
+    color: #ffffff;
+}
+
+.btn_transp {
+    background-color: transparent;
+    color: var(--Desaturatedblue);
+}
